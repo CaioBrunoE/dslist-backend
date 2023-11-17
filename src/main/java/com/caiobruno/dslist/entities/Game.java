@@ -37,7 +37,6 @@ public class Game {
 
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.year = year;
@@ -120,7 +119,7 @@ public class Game {
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
